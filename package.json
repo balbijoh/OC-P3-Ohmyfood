@@ -1,0 +1,13 @@
+{
+  "name": "oc-p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "OC projet 3 ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "author": "balbijoh",
+  "license": "ISC",
+  "browser": "last 4 versions"
+}
