@@ -1,8 +1,70 @@
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn--generic {
+  height: 50px;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  width: 200px;
+  box-shadow: 2px 2px 8px #a7a7a7;
+  cursor: pointer;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+header h1 {
+  text-align: center;
+}
+header img {
+  width: 150px;
+}
+
+.search {
+  background-color: #f8f8f8;
+  text-align: center;
+}
+.search-location {
+  background-color: #ebebeb;
+  padding: 14px 0;
+}
+.search-location label {
+  display: none;
+}
+.search-location input {
+  background-color: #ebebeb;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  width: 150px;
+}
+.search-reservation {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.search-reservation h2 {
+  padding: 15px 0;
+}
+.search-reservation p {
+  padding-bottom: 30px;
 }
 
 img {

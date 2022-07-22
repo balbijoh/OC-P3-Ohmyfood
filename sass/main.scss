@@ -1,7 +1,11 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/base";
 @import "./components/buttons";
 @import "./components/icons";
+@import "./layout/header";
+@import "./pages/home";
+
 
 img {
     width: 200px;

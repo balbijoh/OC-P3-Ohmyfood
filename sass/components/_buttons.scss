@@ -1,0 +1,12 @@
+.btn--generic {
+    height: 50px;
+    background: linear-gradient(175deg, $secondary, $primary);
+    border : none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    width: 200px;
+    box-shadow: 2px 2px 8px $shadows;
+    cursor: pointer;
+}
