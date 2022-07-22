@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/eb98eaadf6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <h1>
+            <img src="images/logo/ohmyfood.png" alt="Ohmyfood" id="logo" />
+        </h1>
+    </header>
+
+    <main>
+        <!-- Section de recherche de restaurant -->
+        <section id="search">
+            <div class="search-location">
+                <form method="post" action="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <label for="search-location__search-bar">Localisation</label>
+                    <input type="search" name="location-searchbar" value="Paris, Belleville" id="search-location__search-bar" />
+                </form>
+            </div>
+            <div class="search-reservation">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <input type="button" name="explore-restaurant-btn" value="Explorer nos restaurants" class="seach-reservation__btn"/>
+            </div>
+        </section>
+
+        <!-- Section fonctionnement -->
+        <section id="notice">
+            <h2>Fonctionnement</h2>
+            <div class="notice-btn">
+                <div class="notice-btn__btn">
+                    <p class="notice-btn__number">1</p>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <input type="button" name="choose-restaurant-btn" value="Choisissez un restaurant" class="notice-btn__btn--choose" />
+                </div>
+
+                <div class="notice-btn__btn">
+                    <p class="notice-btn__number">2</p>
+                    <i class="fa-solid fa-list-ul"></i>
+                    <input type="button" name="compose-menu-btn" value="Composez votre menu" class="notice-btn__btn--menu" />
+                </div>
+
+                <div class="notice-btn__btn">
+                    <p class="notice-btn__number">3</p>
+                    <i class="fa-solid fa-store"></i>
+                    <input type="button" name="eat-btn" value="Dégustez au restaurant" class="notice-btn__btn--eat" />
+                </div>                             
+            </div>
+        </section>
+
+        <!-- Section restaurants -->
+        <section id="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurants-cards">
+                <figure class="restaurant-card">
+                    <img src="images/restaurants/la-palette-du-gout.jpg" alt="Photo du restaurant La Palette du Goût" />
+                    <figcaption>
+                        <div class="restaurant-card__mention-new">Nouveau</div>
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </figcaption>
+                </figure>
+
+                <figure class="restaurant-card">
+                    <img src="images/restaurants/la-note-enchantee.jpg" alt="Photo du restaurant La Note Enchantée" />
+                    <figcaption>
+                        <div class="restaurant-card__mention-new">Nouveau</div>
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </figcaption>
+                </figure>
+
+                <figure class="restaurant-card">
+                    <img src="images/restaurants/a-la-française.jpg" alt="Photo du restaurant À la Française" />
+                    <figcaption>
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </figcaption>
+                </figure>
+
+                <figure class="restaurant-card">
+                    <img src="images/restaurants/le-delice-des-sens.jpg" alt="Photo du restaurant Le Délice des Sens" />
+                    <figcaption>
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <!-- <input type="button" name="like-btn" class="restaurant-card__like-btn" /> -->
+                    </figcaption>
+                </figure>
+            </div>            
+        </section>
+    </main>
+    
+    <!-- Pied de page -->
+    <footer>
+        <h4>ohmyfood</h4>
+        <ul>
+            <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+            <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+            <li>Mentions légales</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
