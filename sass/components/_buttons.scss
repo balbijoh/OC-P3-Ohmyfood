@@ -6,7 +6,33 @@
     color: white;
     font-size: 16px;
     font-weight: 400;
-    width: 200px;
-    box-shadow: 2px 2px 8px $shadows;
+    width: 220px;
     cursor: pointer;
+    @include buttons-shadow($darkShadow);
+}
+
+.notice-btn {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    margin: 10px 20px;
+    background-color: $lightBackground;
+    border-radius: 20px;
+    @include buttons-shadow;
+    &__number {
+        background-color: $primary;
+        border-radius: 50px;
+        color: white;
+        width: 25px;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px 0 3px;
+        margin-left: -12px;
+    }
+    svg {
+        margin: 0 16px;
+    }
+    &__text {
+        font-weight: bold;
+    }
 }

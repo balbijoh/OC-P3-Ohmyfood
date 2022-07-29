@@ -3,9 +3,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: $black90;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+h2 {
+    font-size: map-get($font-size, title-h2);
+    padding: 40px 20px 20px;
+}
+
+h3 {
+    font-size: map-get($font-size, title-h3);
 }

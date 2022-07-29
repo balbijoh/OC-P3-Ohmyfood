@@ -3,11 +3,21 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+h2 {
+  font-size: 24px;
+  padding: 40px 20px 20px;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 .btn--generic {
@@ -18,9 +28,35 @@ a {
   color: white;
   font-size: 16px;
   font-weight: 400;
-  width: 200px;
-  box-shadow: 2px 2px 8px #a7a7a7;
+  width: 220px;
   cursor: pointer;
+  box-shadow: 0 2px 8px #a7a7a7;
+}
+
+.notice-btn {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  margin: 10px 20px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px #dadada;
+}
+.notice-btn__number {
+  background-color: #9356DC;
+  border-radius: 50px;
+  color: white;
+  width: 25px;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0 3px;
+  margin-left: -12px;
+}
+.notice-btn svg {
+  margin: 0 16px;
+}
+.notice-btn__text {
+  font-weight: bold;
 }
 
 header {
@@ -52,6 +88,7 @@ header img {
   text-align: center;
   font-size: 16px;
   width: 150px;
+  color: rgba(0, 0, 0, 0.65);
 }
 .search-reservation {
   height: 300px;
@@ -65,6 +102,17 @@ header img {
 }
 .search-reservation p {
   padding-bottom: 30px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.notice-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+.notice-buttons a {
+  width: 100%;
 }
 
 img {

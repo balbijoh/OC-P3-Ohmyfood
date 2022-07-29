@@ -14,6 +14,7 @@
             text-align: center;
             font-size: 16px;
             width: 150px;
+            color: $black65;
         }
     }
     &-reservation {
@@ -27,6 +28,17 @@
         }
         p {
             padding-bottom: 30px;
+            color: $black65;
         }
+    }
+}
+
+.notice-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    a {
+        width: 100%;
     }
 }
