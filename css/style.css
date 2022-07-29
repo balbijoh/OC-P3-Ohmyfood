@@ -11,6 +11,10 @@ a {
   color: black;
 }
 
+ul {
+  list-style-type: none;
+}
+
 h2 {
   font-size: 24px;
   padding-bottom: 20px;
@@ -86,6 +90,28 @@ header h1 {
 }
 header img {
   width: 150px;
+}
+
+.footer {
+  background-color: #3f3f3f;
+  padding: 20px;
+}
+.footer__title {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color: white;
+}
+.footer__link {
+  line-height: 25px;
+}
+.footer__link a {
+  color: white;
+}
+.footer__link svg {
+  color: white;
+  width: 20px;
+  margin-right: 10px;
 }
 
 .search {

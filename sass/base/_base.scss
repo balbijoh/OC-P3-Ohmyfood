@@ -11,6 +11,10 @@ a {
     color: black;
 }
 
+ul {
+    list-style-type: none;
+}
+
 h2 {
     font-size: map-get($font-size, title-h2);
     padding-bottom: 20px;

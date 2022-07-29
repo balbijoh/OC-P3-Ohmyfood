@@ -1,0 +1,21 @@
+.footer {
+    background-color: $footerColor;
+    padding: 20px;
+    &__title {
+        font-family: 'Shrikhand', sans-serif;
+        font-weight: 100;
+        font-size: 18px;
+        color: white;
+    }
+    &__link {
+        line-height: 25px;
+        a {
+            color: white;
+        }
+        svg {
+            color: white;
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+}
