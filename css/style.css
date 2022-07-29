@@ -13,7 +13,7 @@ a {
 
 h2 {
   font-size: 24px;
-  padding: 40px 20px 20px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -37,7 +37,7 @@ h3 {
   display: flex;
   height: 70px;
   align-items: center;
-  margin: 10px 20px;
+  margin: 10px 0;
   background-color: #f8f8f8;
   border-radius: 20px;
   box-shadow: 0 2px 8px #dadada;
@@ -105,14 +105,23 @@ header img {
   color: rgba(0, 0, 0, 0.65);
 }
 
+#notice {
+  padding: 50px 20px;
+}
+
 .notice-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 0 10px 10px;
 }
 .notice-buttons a {
   width: 100%;
+}
+
+#restaurants {
+  background-color: #f8f8f8;
+  padding: 50px 20px;
 }
 
 img {
