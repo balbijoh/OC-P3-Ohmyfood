@@ -20,3 +20,9 @@
     width: 25px;
     filter: map-get($icons-color-filter, home);
 }
+
+@mixin text-overflow() {    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -88,6 +88,14 @@ p {
 }
 .restaurant-menu__btn-details h4 {
   padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.restaurant-menu__btn-details p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .restaurant-menu__btn-details span {
   float: right;
