@@ -13,3 +13,10 @@
 @mixin buttons-shadow($shadowColor : $lightShadow) {
     box-shadow: 0 2px 8px $shadowColor;
 }
+
+@mixin like-icon() {
+    float: right;
+    height: 50px;
+    width: 25px;
+    filter: map-get($icons-color-filter, home);
+}

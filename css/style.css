@@ -17,7 +17,6 @@ ul {
 
 h2 {
   font-size: 24px;
-  padding-bottom: 20px;
 }
 
 h3 {
@@ -64,6 +63,13 @@ h3 {
   font-weight: bold;
 }
 
+.restaurant-menu__btn-choice {
+  background-color: rgb(255, 255, 255);
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #dadada;
+}
+
 .restaurant-card__mention-new {
   display: flex;
   flex-direction: column;
@@ -87,6 +93,11 @@ header {
   padding-bottom: 10px;
   box-shadow: 2px 0 5px #a7a7a7;
 }
+header svg {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+}
 header h1 {
   text-align: center;
 }
@@ -103,6 +114,7 @@ header img {
   font-weight: 100;
   font-size: 18px;
   color: white;
+  padding-bottom: 20px;
 }
 .footer__link {
   line-height: 25px;
@@ -159,7 +171,7 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0 10px 10px;
+  padding: 20px 0 10px 10px;
 }
 .notice-buttons a {
   width: 100%;
@@ -178,6 +190,7 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 20px;
 }
 
 .restaurant-card {
@@ -199,8 +212,8 @@ header img {
   float: right;
   height: 50px;
   width: 25px;
-  margin-right: 25px;
   filter: invert(44%) sepia(7%) saturate(203%) hue-rotate(120deg) brightness(96%) contrast(91%);
+  margin-right: 25px;
 }
 .restaurant-card__title {
   padding: 10px 10px 0;
@@ -209,8 +222,50 @@ header img {
   padding: 0 10px 0;
 }
 
-img {
-  width: 200px;
+main {
+  background-color: #f8f8f8;
+}
+main img {
+  width: 100%;
+}
+
+#restaurant-menu {
+  position: relative;
+  bottom: 50px;
+  background-color: #f8f8f8;
+  border-radius: 40px 40px 0 0;
+  padding: 30px 20px;
+}
+#restaurant-menu h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+}
+#restaurant-menu h2 svg {
+  float: right;
+  height: 50px;
+  width: 25px;
+  filter: invert(44%) sepia(7%) saturate(203%) hue-rotate(120deg) brightness(96%) contrast(91%);
+  margin: 0 10px;
+}
+#restaurant-menu h3 {
+  font-weight: 200;
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.65);
+}
+#restaurant-menu h3::before, #restaurant-menu h3::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 20px;
+}
+#restaurant-menu h3::before {
+  bottom: 0;
+  border-bottom: 3px solid #99E2D0;
+}
+#restaurant-menu section {
+  margin: 25px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

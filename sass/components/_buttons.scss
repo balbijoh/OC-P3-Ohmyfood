@@ -37,3 +37,10 @@
         font-weight: bold;
     }
 }
+
+.restaurant-menu__btn-choice {
+    background-color: $neutralBackground;
+    margin: 15px 0;
+    border-radius: 10px;
+    @include buttons-shadow;
+}

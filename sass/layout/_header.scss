@@ -3,6 +3,12 @@ header {
     padding-bottom: 10px;
     box-shadow: 2px 0 5px $darkShadow;
     
+    svg {
+        position: absolute;
+        left: 20px;
+        top: 25px;
+    }
+
     h1 {
         text-align: center;
     }

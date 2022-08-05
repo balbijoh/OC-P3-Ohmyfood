@@ -1,0 +1,50 @@
+main {
+    background-color: $lightBackgroundOpac;
+    img {
+    width: 100%;
+    }
+}
+
+#restaurant-menu {
+    position: relative;
+    bottom: 50px;
+    background-color: $lightBackgroundOpac;
+    border-radius: 40px 40px 0 0;
+    padding: 30px 20px;
+
+    h2 {
+        font-family: $secondaryTypography;
+        font-weight: 400;
+        svg {
+            @include like-icon;
+            margin: 0 10px;
+        }
+    }
+
+    h3 {
+        font-weight: 200;
+        position: relative;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        color: $black65;
+    
+        &::before, &::after {
+            position: absolute;
+            content: '';
+            width: 50px;
+            height: 20px;
+        }
+        
+        &::before {
+            bottom:0;
+            border-bottom:3px solid $tertiary;
+        }
+    }
+
+    section {
+        margin: 25px 0;
+    }
+}
+
+
+
