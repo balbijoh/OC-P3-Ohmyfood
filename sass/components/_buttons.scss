@@ -58,23 +58,33 @@
         flex-direction: column;
         padding: 10px;
         width: 100%;
+        @include text-overflow;
 
-        h4 {
-            padding-bottom: 5px;
+        h4 {            
             @include text-overflow;
+            padding-bottom: 5px;
         }
 
         p {
             @include text-overflow;
-        }
-
-        span {
-            float: right;
+            color: $black65;
         }
     }
     
+    &__btn-price {
+        min-width: 40px;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 10px;
+        p {
+            color: $black90;
+        }        
+    }
+
     &__btn-validate {
-        width: 60px;
+        min-width: 60px;
         background-color: $tertiary;
         border-radius: 0 10px 10px 0;
         display: none;
