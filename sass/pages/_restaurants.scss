@@ -1,7 +1,11 @@
 main {
     img {
     width: 100%;
-
+    @include medium-devices {
+        height: 400px;
+        object-fit: cover;
+        object-position: 0 60%;
+        }
     }
 }
 
@@ -57,10 +61,27 @@ main {
         margin: 25px 0;
     }
 
-    .restaurant-menu__btn-order {
-        text-align: center;
-        margin-top: 50px;
-    }
+    .restaurant-menu {
+        &__btn-order {
+            text-align: center;
+            margin-top: 50px;
+        }
+    
+        &__composition-table {
+            display: flex;
+            flex-direction: column;
+            @include large-devices {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            section {
+            @include large-devices {
+                width: 30%;
+            }
+            }
+        }
+    }    
 }
 
 

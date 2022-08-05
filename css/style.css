@@ -339,6 +339,13 @@ header img {
 main img {
   width: 100%;
 }
+@media screen and (min-width: 599px) {
+  main img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 0 60%;
+  }
+}
 
 #restaurant-menu {
   position: relative;
@@ -391,6 +398,21 @@ main img {
 #restaurant-menu .restaurant-menu__btn-order {
   text-align: center;
   margin-top: 50px;
+}
+#restaurant-menu .restaurant-menu__composition-table {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  #restaurant-menu .restaurant-menu__composition-table {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 992px) {
+  #restaurant-menu .restaurant-menu__composition-table section {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
