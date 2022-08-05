@@ -30,11 +30,17 @@
             padding-bottom: 30px;
             color: $black65;
         }
+        @include large-devices {
+            height: 250px;
+        }
     }
 }
 
 #notice {
     padding: $paddingSections;
+    @include large-devices {
+        text-align: center;
+    }
 }
 
 .notice-buttons {
@@ -44,16 +50,37 @@
     padding: 20px 0 10px 10px;
     a {
         width: 100%;
+        @include large-devices {
+            max-width: 400px;
+        }
     }
     svg {
         filter: map-get($icons-color-filter, home);
         padding: 0 20px;
+    }
+
+    @include large-devices {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 1500px;
+        margin: 0 auto;
     }
 }
 
 #restaurants {
     background-color: $lightBackground;
     padding: $paddingSections;
+    @include large-devices {        
+        padding: 40px;
+        border-radius: 20px;
+        margin: 0 20px 20px;
+    }
+
+    h2 {
+        @include large-devices {
+            text-align: center;
+        }
+    }
 }
 
 .restaurants-cards {
@@ -61,6 +88,20 @@
     flex-direction: column;
     justify-content: space-between;
     padding-top: 20px;
+    @include medium-devices {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    a {
+        @include medium-devices {
+            width: 48%;
+        }
+        @include large-devices {
+            width: 24%;
+            max-width: 450px;
+        }
+    }
 }
 
 .restaurant-card {

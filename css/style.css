@@ -48,9 +48,10 @@ p {
   display: flex;
   height: 70px;
   align-items: center;
-  margin: 10px 0;
+  margin: 10px;
   background-color: rgba(1, 1, 10, 0.03);
   border-radius: 20px;
+  text-align: left;
   box-shadow: 0 2px 8px #dadada;
 }
 .notice-btn__number {
@@ -205,9 +206,19 @@ header img {
   padding-bottom: 30px;
   color: rgba(0, 0, 0, 0.65);
 }
+@media screen and (min-width: 992px) {
+  .search-reservation {
+    height: 250px;
+  }
+}
 
 #notice {
   padding: 50px 20px;
+}
+@media screen and (min-width: 992px) {
+  #notice {
+    text-align: center;
+  }
 }
 
 .notice-buttons {
@@ -219,14 +230,39 @@ header img {
 .notice-buttons a {
   width: 100%;
 }
+@media screen and (min-width: 992px) {
+  .notice-buttons a {
+    max-width: 400px;
+  }
+}
 .notice-buttons svg {
   filter: invert(44%) sepia(7%) saturate(203%) hue-rotate(120deg) brightness(96%) contrast(91%);
   padding: 0 20px;
+}
+@media screen and (min-width: 992px) {
+  .notice-buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 }
 
 #restaurants {
   background-color: rgba(1, 1, 10, 0.03);
   padding: 50px 20px;
+}
+@media screen and (min-width: 992px) {
+  #restaurants {
+    padding: 40px;
+    border-radius: 20px;
+    margin: 0 20px 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #restaurants h2 {
+    text-align: center;
+  }
 }
 
 .restaurants-cards {
@@ -234,6 +270,23 @@ header img {
   flex-direction: column;
   justify-content: space-between;
   padding-top: 20px;
+}
+@media screen and (min-width: 599px) {
+  .restaurants-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 599px) {
+  .restaurants-cards a {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants-cards a {
+    width: 24%;
+    max-width: 450px;
+  }
 }
 
 .restaurant-card {
