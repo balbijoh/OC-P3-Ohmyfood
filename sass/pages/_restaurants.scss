@@ -1,5 +1,5 @@
 main {
-    background-color: $lightBackgroundOpac;
+    background-color: $lightBackground;
     img {
     width: 100%;
     }
@@ -15,9 +15,11 @@ main {
     h2 {
         font-family: $secondaryTypography;
         font-weight: 400;
+        font-size: 28px;
         svg {
             @include like-icon;
             margin: 0 10px;
+            height: 35px;
         }
     }
 
@@ -41,8 +43,24 @@ main {
         }
     }
 
+    p {
+        font-size: map-get($font-size, size-p);
+        color: $black65;
+    }
+
+    span {
+        font-size: map-get($font-size, size-p);
+        color: $black90;
+        font-weight: bold;
+    }
+
     section {
         margin: 25px 0;
+    }
+
+    .restaurant-menu__btn-order {
+        text-align: center;
+        margin-top: 50px;
     }
 }
 

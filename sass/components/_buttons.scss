@@ -38,9 +38,42 @@
     }
 }
 
-.restaurant-menu__btn-choice {
-    background-color: $neutralBackground;
-    margin: 15px 0;
-    border-radius: 10px;
-    @include buttons-shadow;
+.restaurant-menu {
+    &__btn-choice {
+        background-color: $neutralBackground;
+        margin: 15px 0;
+        border-radius: 10px;
+        @include buttons-shadow;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    &__btn-details {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+
+        h4 {
+            padding-bottom: 5px;
+        }
+
+        span {
+            float: right;
+        }
+    }
+    
+    &__btn-validate {
+        width: 60px;
+        background-color: $tertiary;
+        border-radius: 0 10px 10px 0;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        svg {
+            filter: map-get($icons-color-filter, footer);
+            font-size: 20px;
+        }
+    }
 }
