@@ -9,13 +9,13 @@
     }
     &__link {
         line-height: 25px;
-        a {
-            color: white;
-        }
         svg {
-            color: white;
+            filter: map-get($icons-color-filter, footer);
             width: 20px;
             margin-right: 10px;
+        }
+        p {
+            color: white;
         }
     }
 }

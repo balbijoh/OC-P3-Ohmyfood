@@ -6,9 +6,9 @@
         padding: 14px 0;
         label {
             display: none;
-        }
+        }      
         input {
-            background-color: $darkBackground;
+            background-color: transparent;
             border: none;
             font-weight: bold;
             text-align: center;
@@ -45,6 +45,10 @@
     a {
         width: 100%;
     }
+    svg {
+        filter: map-get($icons-color-filter, home);
+        padding: 0 20px;
+    }
 }
 
 #restaurants {
@@ -77,6 +81,7 @@
         height: 50px;
         width: 25px;
         margin-right: 25px;
+        filter: map-get($icons-color-filter, home);
     }
     &__title {
         padding: 10px 10px 0;

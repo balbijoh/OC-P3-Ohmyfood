@@ -7,3 +7,9 @@ $font-size : (
     title-h2: 24px,
     title-h3: 18px
 );
+
+$icons-color-filter : (
+    footer: invert(98%) sepia(87%) saturate(7270%) hue-rotate(183deg) brightness(126%) contrast(96%),
+    home: invert(44%) sepia(7%) saturate(203%) hue-rotate(120deg) brightness(96%) contrast(91%),
+    home-hover: invert(44%) sepia(36%) saturate(5648%) hue-rotate(242deg) brightness(91%) contrast(89%)
+);

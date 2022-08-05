@@ -42,7 +42,7 @@ h3 {
   height: 70px;
   align-items: center;
   margin: 10px 0;
-  background-color: #f8f8f8;
+  background-color: rgba(1, 1, 10, 0.03);
   border-radius: 20px;
   box-shadow: 0 2px 8px #dadada;
 }
@@ -56,8 +56,9 @@ h3 {
   padding: 5px 0 3px;
   margin-left: -12px;
 }
-.notice-btn svg {
+.notice-btn i {
   margin: 0 16px;
+  color: white;
 }
 .notice-btn__text {
   font-weight: bold;
@@ -84,6 +85,7 @@ h3 {
 header {
   padding-top: 20px;
   padding-bottom: 10px;
+  box-shadow: 2px 0 5px #a7a7a7;
 }
 header h1 {
   text-align: center;
@@ -105,28 +107,28 @@ header img {
 .footer__link {
   line-height: 25px;
 }
-.footer__link a {
-  color: white;
-}
 .footer__link svg {
-  color: white;
+  filter: invert(98%) sepia(87%) saturate(7270%) hue-rotate(183deg) brightness(126%) contrast(96%);
   width: 20px;
   margin-right: 10px;
 }
+.footer__link p {
+  color: white;
+}
 
 .search {
-  background-color: #f8f8f8;
+  background-color: rgba(1, 1, 10, 0.03);
   text-align: center;
 }
 .search-location {
-  background-color: #ebebeb;
+  background-color: rgba(1, 1, 10, 0.06);
   padding: 14px 0;
 }
 .search-location label {
   display: none;
 }
 .search-location input {
-  background-color: #ebebeb;
+  background-color: transparent;
   border: none;
   font-weight: bold;
   text-align: center;
@@ -162,9 +164,13 @@ header img {
 .notice-buttons a {
   width: 100%;
 }
+.notice-buttons svg {
+  filter: invert(44%) sepia(7%) saturate(203%) hue-rotate(120deg) brightness(96%) contrast(91%);
+  padding: 0 20px;
+}
 
 #restaurants {
-  background-color: #f8f8f8;
+  background-color: rgba(1, 1, 10, 0.03);
   padding: 50px 20px;
 }
 
@@ -194,6 +200,7 @@ header img {
   height: 50px;
   width: 25px;
   margin-right: 25px;
+  filter: invert(44%) sepia(7%) saturate(203%) hue-rotate(120deg) brightness(96%) contrast(91%);
 }
 .restaurant-card__title {
   padding: 10px 10px 0;
