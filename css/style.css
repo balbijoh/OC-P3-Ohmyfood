@@ -257,6 +257,7 @@ header img {
     padding: 40px;
     border-radius: 20px;
     margin: 0 20px 20px;
+    box-shadow: 0 2px 8px #dadada;
   }
 }
 @media screen and (min-width: 992px) {
@@ -311,6 +312,11 @@ header img {
   filter: invert(44%) sepia(7%) saturate(203%) hue-rotate(120deg) brightness(96%) contrast(91%);
   margin-right: 25px;
 }
+@media screen and (min-width: 992px) {
+  .restaurant-card svg {
+    margin-right: 15px;
+  }
+}
 .restaurant-card__title {
   padding: 10px 10px 0;
 }
@@ -318,19 +324,16 @@ header img {
   padding: 0 10px 0;
 }
 
-main {
-  background-color: rgba(1, 1, 10, 0.03);
-}
 main img {
   width: 100%;
 }
 
 #restaurant-menu {
   position: relative;
-  bottom: 50px;
+  margin-top: -50px;
   background-color: #f8f8f8;
   border-radius: 40px 40px 0 0;
-  padding: 30px 20px;
+  padding: 30px 20px 80px;
 }
 #restaurant-menu h2 {
   font-family: "Shrikhand", sans-serif;

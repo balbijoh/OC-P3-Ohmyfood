@@ -1,16 +1,16 @@
 main {
-    background-color: $lightBackground;
     img {
     width: 100%;
+
     }
 }
 
 #restaurant-menu {
     position: relative;
-    bottom: 50px;
+    margin-top: -50px;
     background-color: $lightBackgroundOpac;
     border-radius: 40px 40px 0 0;
-    padding: 30px 20px;
+    padding: 30px 20px 80px;
 
     h2 {
         font-family: $secondaryTypography;

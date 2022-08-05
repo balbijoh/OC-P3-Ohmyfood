@@ -74,6 +74,7 @@
         padding: 40px;
         border-radius: 20px;
         margin: 0 20px 20px;
+        box-shadow: 0 2px 8px $lightShadow;
     }
 
     h2 {
@@ -121,6 +122,9 @@
     svg {
         @include like-icon;        
         margin-right: 25px;
+        @include large-devices {
+            margin-right: 15px;
+        }
     }
     &__title {
         padding: 10px 10px 0;
