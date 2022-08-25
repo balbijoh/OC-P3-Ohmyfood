@@ -26,3 +26,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@mixin background-hover-color($color: $primary) {
+    @if (lightness($color) < 70%) {
+        $color: lighten($color, 35%);
+    } @else {
+        $color: darken($color, 10%);
+    }
+    background-color: $color;
+}

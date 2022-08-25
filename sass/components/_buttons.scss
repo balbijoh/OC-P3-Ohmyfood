@@ -40,17 +40,22 @@
     &__text {
         font-weight: bold;
     }
+
+    &:hover {
+        @include background-hover-color;
+    }
 }
 
 .restaurant-menu {
     &__btn-choice {
-        background-color: $neutralBackground;
-        margin: 15px 0;
-        border-radius: 10px;
-        @include buttons-shadow;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        background-color: $neutralBackground;
+        margin: 15px 0;
+        border-radius: 10px;
+        cursor: pointer;
+        @include buttons-shadow;
     }
     
     &__btn-details {

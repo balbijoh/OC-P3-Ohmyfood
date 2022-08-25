@@ -75,15 +75,19 @@ p {
 .notice-btn__text {
   font-weight: bold;
 }
+.notice-btn:hover {
+  background-color: #f2eafb;
+}
 
 .restaurant-menu__btn-choice {
-  background-color: rgb(255, 255, 255);
-  margin: 15px 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px #dadada;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  margin: 15px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #dadada;
 }
 .restaurant-menu__btn-details {
   display: flex;
@@ -186,6 +190,9 @@ header img {
 }
 .footer__link p {
   color: white;
+}
+.footer__link p:hover {
+  color: #99E2D0;
 }
 
 .search {
@@ -322,6 +329,10 @@ header img {
   margin-bottom: 15px;
   position: relative;
   box-shadow: 0 2px 8px #dadada;
+}
+.restaurant-card:hover {
+  transition-duration: 0.2s;
+  transform: scale(1.02);
 }
 .restaurant-card img {
   border-radius: 15px 15px 0 0;
