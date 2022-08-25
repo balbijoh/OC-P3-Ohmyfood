@@ -227,8 +227,16 @@ header img {
 #notice {
   padding: 50px 20px;
 }
+@media screen and (min-width: 599px) {
+  #notice {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 992px) {
   #notice {
+    width: 100%;
     text-align: center;
   }
 }
@@ -358,6 +366,9 @@ main img {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #restaurant-menu h2 svg {
   float: right;
@@ -394,6 +405,12 @@ main img {
 }
 #restaurant-menu section {
   margin: 25px 0;
+}
+@media screen and (min-width: 599px) {
+  #restaurant-menu section {
+    width: 550px;
+    margin: 10px auto;
+  }
 }
 #restaurant-menu .restaurant-menu__btn-order {
   text-align: center;

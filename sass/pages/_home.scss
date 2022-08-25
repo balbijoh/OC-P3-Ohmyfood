@@ -38,7 +38,14 @@
 
 #notice {
     padding: $paddingSections;
+    @include medium-devices {
+        width: 400px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
     @include large-devices {
+        width: 100%;
         text-align: center;
     }
 }

@@ -20,6 +20,10 @@ main {
         font-family: $secondaryTypography;
         font-weight: 400;
         font-size: 28px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
         svg {
             @include like-icon;
             margin: 0 10px;
@@ -59,6 +63,11 @@ main {
 
     section {
         margin: 25px 0;
+
+        @include medium-devices {
+            width: 550px;
+            margin: 10px auto;
+        }
     }
 
     .restaurant-menu {
