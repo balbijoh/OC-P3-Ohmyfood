@@ -120,12 +120,20 @@
     margin-bottom: 15px;
     position: relative;
     @include buttons-shadow;
+
     img {
         border-radius: 15px 15px 0 0;
         width: 100%;
         height: 180px;
         object-fit: cover;
     }
+
+    h3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     svg {
         @include like-icon;        
         margin-right: 25px;
@@ -133,9 +141,11 @@
             margin-right: 15px;
         }
     }
+
     &__title {
         padding: 10px 10px 0;
     }
+
     &__location {
         padding: 0 10px 0;
     }
