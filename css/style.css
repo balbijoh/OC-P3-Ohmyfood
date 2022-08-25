@@ -48,6 +48,15 @@ p {
   box-shadow: 0 2px 8px #a7a7a7;
 }
 
+.notice-buttons a {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .notice-buttons a {
+    max-width: 400px;
+  }
+}
+
 .notice-btn {
   display: flex;
   height: 70px;
@@ -69,14 +78,23 @@ p {
   margin-left: -12px;
 }
 .notice-btn i {
-  margin: 0 16px;
-  color: white;
+  margin: 5px 20px 0;
+}
+.notice-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.notice-btn__icon {
+  fill: rgb(126, 126, 126);
 }
 .notice-btn__text {
   font-weight: bold;
 }
 .notice-btn:hover {
   background-color: #f2eafb;
+}
+.notice-btn:hover .notice-btn__icon {
+  fill: #9356DC;
 }
 
 .restaurant-menu__btn-choice {
@@ -130,8 +148,10 @@ p {
   justify-content: center;
 }
 .restaurant-menu__btn-validate svg {
-  filter: invert(98%) sepia(87%) saturate(7270%) hue-rotate(183deg) brightness(126%) contrast(96%);
-  font-size: 20px;
+  width: 20px;
+}
+.restaurant-menu__btn-validate-icon {
+  fill: white;
 }
 
 .restaurant-card__mention-new {
@@ -184,15 +204,23 @@ header img {
   line-height: 25px;
 }
 .footer__link svg {
-  filter: invert(98%) sepia(87%) saturate(7270%) hue-rotate(183deg) brightness(126%) contrast(96%);
-  width: 20px;
+  filter: white;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
   margin-right: 10px;
+}
+.footer__link .footer__link-icon {
+  fill: white;
 }
 .footer__link p {
   color: white;
 }
 .footer__link p:hover {
   color: #99E2D0;
+}
+.footer__link p:hover .footer__link-icon {
+  fill: #99E2D0;
 }
 
 .search {
@@ -257,18 +285,6 @@ header img {
   flex-direction: column;
   align-items: center;
   padding: 20px 0 10px 10px;
-}
-.notice-buttons a {
-  width: 100%;
-}
-@media screen and (min-width: 992px) {
-  .notice-buttons a {
-    max-width: 400px;
-  }
-}
-.notice-buttons svg {
-  filter: invert(44%) sepia(7%) saturate(203%) hue-rotate(120deg) brightness(96%) contrast(91%);
-  padding: 0 20px;
 }
 @media screen and (min-width: 992px) {
   .notice-buttons {
@@ -349,7 +365,7 @@ header img {
   float: right;
   height: 50px;
   width: 25px;
-  filter: invert(44%) sepia(7%) saturate(203%) hue-rotate(120deg) brightness(96%) contrast(91%);
+  filter: rgb(126, 126, 126);
   margin-right: 25px;
 }
 @media screen and (min-width: 992px) {
@@ -394,7 +410,7 @@ main img {
   float: right;
   height: 50px;
   width: 25px;
-  filter: invert(44%) sepia(7%) saturate(203%) hue-rotate(120deg) brightness(96%) contrast(91%);
+  filter: rgb(126, 126, 126);
   margin: 0 10px;
   height: 35px;
 }

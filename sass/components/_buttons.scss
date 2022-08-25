@@ -1,3 +1,4 @@
+// Boutons génériques ---------------------------------------
 .btn--generic {
     height: 50px;
     background: linear-gradient(175deg, $secondary, $primary);
@@ -9,6 +10,17 @@
     width: 220px;
     cursor: pointer;
     @include buttons-shadow($darkShadow);
+}
+
+
+// Accueil : boutons Fonctionnement ---------------------------------------
+.notice-buttons {
+    a {
+        width: 100%;
+        @include large-devices {
+            max-width: 400px;
+        }
+    }
 }
 
 .notice-btn {
@@ -33,8 +45,16 @@
     }
 
     i {
-        margin: 0 16px;
-        color: white;
+        margin: 5px 20px 0;        
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__icon {
+        fill: map-get($icons-color-filter, home);
     }
     
     &__text {
@@ -43,9 +63,15 @@
 
     &:hover {
         @include background-hover-color;
+
+        .notice-btn__icon {
+            fill: $primary;
+        }
     }
 }
 
+
+// Pages restaurants : boutons Choix ---------------------------------------
 .restaurant-menu {
     &__btn-choice {
         display: flex;
@@ -95,9 +121,13 @@
         display: none;
         flex-direction: column;
         justify-content: center;
+
         svg {
-            filter: map-get($icons-color-filter, footer);
-            font-size: 20px;
+            width: 20px;
+        }
+
+        &-icon {
+            fill: white;
         }
     }
 }
