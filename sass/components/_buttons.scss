@@ -115,12 +115,12 @@
     }
 
     &__btn-validate {
-        min-width: 60px;
         background-color: $tertiary;
         border-radius: 0 10px 10px 0;
         display: none;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
 
         svg {
             width: 20px;
@@ -133,6 +133,7 @@
 
 }
 
+// Animation : slide-effect boutons Choix ----------------------------
 .restaurant-menu__btn-choice {
     &:nth-child(2) {
         animation: slide-effect $anim-restaurant-choice-duration 150ms both;
@@ -147,10 +148,9 @@
     }
 
     &:nth-child(5) {
-        animation: slide-effect $anim-restaurant-choice-duration 550ms both;
+        animation: slide-effect $anim-restaurant-choice-duration 750ms both;
     }
 }
-
 
 @keyframes slide-effect {
     0% {
@@ -161,4 +161,37 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+// Animation : icon-roll pour validation choix ----------------------------
+.restaurant-menu__btn-choice {
+    .restaurant-menu__btn-validate  {
+    animation: disappearing-validate 500ms forwards;
+    }
+}
+
+.restaurant-menu__btn-choice:hover {
+    .restaurant-menu__btn-validate  {
+    display: flex;
+    animation: appearing-validate 500ms ease forwards;
+    }
+
+    svg {
+        animation: icon-roll 400ms 100ms;
+    }
+}
+
+@keyframes appearing-validate {
+    0% { width: 0px; }
+    100% { width: 80px; }
+}
+
+@keyframes disappearing-validate {
+    0% { width: 80px; }
+    100% { width: 0px; }
+}
+
+@keyframes icon-roll {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(370deg); }
 }

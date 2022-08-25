@@ -140,12 +140,12 @@ p {
   color: rgba(0, 0, 0, 0.9);
 }
 .restaurant-menu__btn-validate {
-  min-width: 60px;
   background-color: #99E2D0;
   border-radius: 0 10px 10px 0;
   display: none;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .restaurant-menu__btn-validate svg {
   width: 20px;
@@ -164,7 +164,7 @@ p {
   animation: slide-effect 1000ms 550ms both;
 }
 .restaurant-menu__btn-choice:nth-child(5) {
-  animation: slide-effect 1000ms 550ms both;
+  animation: slide-effect 1000ms 750ms both;
 }
 
 @keyframes slide-effect {
@@ -175,6 +175,42 @@ p {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+.restaurant-menu__btn-choice .restaurant-menu__btn-validate {
+  animation: disappearing-validate 500ms forwards;
+}
+
+.restaurant-menu__btn-choice:hover .restaurant-menu__btn-validate {
+  display: flex;
+  animation: appearing-validate 500ms ease forwards;
+}
+.restaurant-menu__btn-choice:hover svg {
+  animation: icon-roll 400ms 100ms;
+}
+
+@keyframes appearing-validate {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80px;
+  }
+}
+@keyframes disappearing-validate {
+  0% {
+    width: 80px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+@keyframes icon-roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(370deg);
   }
 }
 .restaurant-card__mention-new {
