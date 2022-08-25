@@ -67,7 +67,7 @@
         .notice-btn__icon {
             fill: $primary;
         }
-    }
+    }    
 }
 
 
@@ -129,5 +129,36 @@
         &-icon {
             fill: white;
         }
+    }
+
+}
+
+.restaurant-menu__btn-choice {
+    &:nth-child(2) {
+        animation: slide-effect $anim-restaurant-choice-duration 150ms both;
+    }
+
+    &:nth-child(3) {
+        animation: slide-effect $anim-restaurant-choice-duration 350ms both;
+    }
+
+    &:nth-child(4) {
+        animation: slide-effect $anim-restaurant-choice-duration 550ms both;
+    }
+
+    &:nth-child(5) {
+        animation: slide-effect $anim-restaurant-choice-duration 550ms both;
+    }
+}
+
+
+@keyframes slide-effect {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
