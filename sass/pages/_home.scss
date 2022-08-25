@@ -55,16 +55,6 @@
     flex-direction: column;
     align-items: center;
     padding: 20px 0 10px 10px;
-    a {
-        width: 100%;
-        @include large-devices {
-            max-width: 400px;
-        }
-    }
-    svg {
-        filter: map-get($icons-color-filter, home);
-        padding: 0 20px;
-    }
 
     @include large-devices {
         flex-direction: row;
