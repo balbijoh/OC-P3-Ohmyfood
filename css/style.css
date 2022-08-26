@@ -229,7 +229,10 @@ p {
   color: red;
 }
 
-.restaurant-card__like-icon--empty:hover {
+.fa-heart:hover {
+  font-weight: bold;
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  background-clip: text;
   animation: like-icon-filling 1000ms 0ms both;
 }
 

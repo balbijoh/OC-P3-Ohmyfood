@@ -213,7 +213,13 @@
     }
 }
 
-.restaurant-card__like-icon--empty:hover {
+.fa-heart:hover {
+    font-weight: bold;
+    background: linear-gradient(0deg, $secondary, $primary);
+    // path {
+    //     color: transparent;
+    // }
+	background-clip: text;
     animation: like-icon-filling 1000ms 0ms both;
 }
 
@@ -240,7 +246,7 @@
 
     50% {
     background: linear-gradient(0deg, $secondary, $primary 50%, white 50%);
-    }    
+    }   
 
     60% {
     background: linear-gradient(0deg, $secondary, $primary 60%, white 60%);
@@ -262,3 +268,188 @@
     background: linear-gradient(0deg, $secondary, $primary 100%, white 100%);
     }
 }
+
+// .restaurant-card__like-icon {
+// 	position: relative;
+// }
+  
+// .fa-heart {
+//     position: absolute;
+//     right: 20px;
+//     bottom: 33px;
+//     font-size: 28px;
+// }
+
+// .restaurant-card__like-icon--filled {
+//     display: none;
+// }
+
+// .fa-heart:hover {
+//     font-weight: bold;
+//     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+//     color: transparent;
+//     background-clip: text;
+//     animation: heart 1s 0s ease-out both;
+//     -webkit-animation: heart 1s 0s ease-out both;
+//     -webkit-background-clip: text;
+//     -webkit-text-stroke: unset;
+// }
+
+// /*animation coeur*/
+// @keyframes heart {
+// 0% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 10% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 20% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 30% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 40% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 50% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 60% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 70% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 80% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 90% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 100% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+// }
+
+// @-webkit-keyframes heart {
+// 0% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 10% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 20% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 30% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 40% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 50% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 60% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 70% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 80% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 90% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+
+// 100% {
+//     background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-weight: bold;
+// }
+// }
