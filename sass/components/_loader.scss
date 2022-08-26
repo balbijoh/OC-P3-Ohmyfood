@@ -1,0 +1,95 @@
+.loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: $black20;
+    animation: loading-screen 3000ms 50ms forwards;
+}
+
+@keyframes loading-screen {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+.loading-message {
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 20% auto;
+    width: 250px;
+    height: 140px;
+    background: lighten($primary, 20%);
+    border-radius: 20px;
+    box-shadow: 0 0 50px white;
+
+    p {
+        text-align: center;
+        margin-top: 10px;
+        color: white;
+    }
+
+    .loading-spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        margin-top: 10px;
+    
+        &__dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: white;
+        margin: 0 10px;
+
+        &--1 {
+            position: relative;
+            left: 10px;
+            animation: spinner-anim 2000ms 0ms infinite;
+        }
+
+        &--2 {
+            position: relative;
+            bottom: 20px;
+            left: 10px;
+            animation: spinner-anim 2000ms 300ms infinite;
+        }
+
+        &--3 {
+            position: relative;
+            left: 10px;
+            animation: spinner-anim 2000ms 600ms infinite;
+        }
+
+        &--4 {
+            position: relative;
+            top: 20px;
+            right: 40px;
+            animation: spinner-anim 2000ms 900ms infinite;
+        }
+        }
+    }
+}
+
+@keyframes spinner-anim {
+    0% { 
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(2.5); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
