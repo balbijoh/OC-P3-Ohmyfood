@@ -131,6 +131,7 @@
 
     svg {
         @include like-icon;
+        padding: 0;
     }
 
     figcaption {

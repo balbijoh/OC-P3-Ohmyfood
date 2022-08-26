@@ -203,98 +203,62 @@
 
 .restaurant-card__like-icon--empty {
     padding: 5px 0;
-    z-index: 0;
 }
 
-.restaurant-card__like-icon--filled {
+.restaurant-card__like-icon--filled {    
+    background: yellow;
+    background-clip: text;
     path {
-        position: absolute;
-        background-clip: text;
-        color: transparent;
+        color: red;
     }
 }
 
 .restaurant-card__like-icon--empty:hover {
-    z-index: -1;
-    background: linear-gradient(0deg, $secondary, $primary);
-    color: transparent;
-    font-weight: bold;
     animation: like-icon-filling 1000ms 0ms both;
 }
 
 @keyframes like-icon-filling {
 	0% {
 	background: linear-gradient(0deg, $secondary, $primary, white 0%);
-	color: transparent;
-	font-weight: bold;
 	}
   
 	10% {
 	background: linear-gradient(0deg, $secondary, $primary 10%, white 10%);
-    color: transparent;
-    font-weight: bold;
-	}
+    }
   
 	20% {
 	background: linear-gradient(0deg, $secondary, $primary 20%, white 20%);
-	color: transparent;
-    background-clip: text;
-	font-weight: bold;
 	}
 
     30% {
     background: linear-gradient(0deg, $secondary, $primary 30%, white 30%);
-    color: transparent;
-    background-clip: text;
-    font-weight: bold;
     }
 
     40% {
 	background: linear-gradient(0deg, $secondary, $primary 40%, white 40%);
-	color: transparent;
-    background-clip: text;
-	font-weight: bold;
 	}
 
     50% {
     background: linear-gradient(0deg, $secondary, $primary 50%, white 50%);
-    color: transparent;
-    background-clip: text;
-    font-weight: bold;
     }    
 
     60% {
     background: linear-gradient(0deg, $secondary, $primary 60%, white 60%);
-    color: transparent;
-    background-clip: text;
-    font-weight: bold;
     }
     
     70% {
     background: linear-gradient(0deg, $secondary, $primary 70%, white 70%);
-    color: transparent;
-    background-clip: text;
-    font-weight: bold;
     }
 
     80% {
     background: linear-gradient(0deg, $secondary, $primary 80%, white 80%);
-    color: transparent;
-    background-clip: text;
-    font-weight: bold;
     }
 
     90% {
     background: linear-gradient(0deg, $secondary, $primary 90%, white 90%);
-    color: transparent;
-    background-clip: text;
-    font-weight: bold;
     }
 
     100% {
     background: linear-gradient(0deg, $secondary, $primary 100%, white 100%);
-    color: transparent;
-    background-clip: text;
-    font-weight: bold;
     }
 }
