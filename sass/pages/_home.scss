@@ -130,11 +130,13 @@
     }
 
     svg {
-        @include like-icon;        
-        margin-right: 25px;
-        @include large-devices {
-            margin-right: 15px;
-        }
+        @include like-icon;
+    }
+
+    figcaption {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     &__title {
