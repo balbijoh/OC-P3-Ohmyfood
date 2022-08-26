@@ -272,13 +272,13 @@ header img {
 .footer__link .footer__link-icon {
   fill: white;
 }
-.footer__link p {
+.footer__link a {
   color: white;
 }
-.footer__link p:hover {
+.footer__link a:hover {
   color: #99E2D0;
 }
-.footer__link p:hover .footer__link-icon {
+.footer__link a:hover .footer__link-icon {
   fill: #99E2D0;
 }
 
