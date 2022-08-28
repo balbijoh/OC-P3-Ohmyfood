@@ -23,12 +23,6 @@ main {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-
-        svg {
-            @include like-icon;
-            margin: 0 10px;
-            height: 35px;
-        }
     }
 
     h3 {
@@ -71,6 +65,11 @@ main {
     }
 
     .restaurant-menu {
+        &__title {
+            display: flex;
+            justify-content: space-between;
+        }
+
         &__btn-order {
             text-align: center;
             margin-top: 50px;

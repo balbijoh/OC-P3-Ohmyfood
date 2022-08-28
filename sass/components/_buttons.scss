@@ -175,34 +175,50 @@
 
 
 // Animation : Like-icons ----------------------------
+#fill-like-icon-svg path {
+    fill: url(#like-icon-gradient);
+}
+
 .restaurant-card {
     svg {
         @include like-icon;
         padding: 0;
     }
-
-    #fill-like-icon-svg path {
-        fill: url(#like-icon-gradient);
-    }
 }
 
-.restaurant-card__like-icon {
+.restaurant__like-icon {
     position: relative;
 
-    &:hover > .restaurant-card__like-icon--filled {
+    &:hover > .restaurant__like-icon--filled {
         animation: filling-icon 500ms 100ms forwards;
     }
 
-    &:hover > .restaurant-card__like-icon--empty {
+    &:hover > .restaurant__like-icon--empty {
         animation: disappearing-empty-icon 500ms 100ms forwards;
     }
 }
 
-.restaurant-card__like-icon--filled {
+.restaurant__like-icon--filled {
     position: absolute;
     transform: scale(0);
     transform-origin: 25% bottom;
 }
+
+.restaurant-menu__title {
+    svg {
+        @include like-icon;
+        margin: 0 10px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    .restaurant__like-icon--filled {
+        position: absolute;
+        right: 0;
+        transform-origin: bottom;
+    }
+}
+
 
 @keyframes filling-icon {
 	0% { transform: scale(0); }

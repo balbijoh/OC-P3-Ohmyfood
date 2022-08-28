@@ -197,6 +197,10 @@ p {
     opacity: 1;
   }
 }
+#fill-like-icon-svg path {
+  fill: url(#like-icon-gradient);
+}
+
 .restaurant-card svg {
   float: right;
   height: 25px;
@@ -206,24 +210,38 @@ p {
   filter: rgb(126, 126, 126);
   padding: 0;
 }
-.restaurant-card #fill-like-icon-svg path {
-  fill: url(#like-icon-gradient);
-}
 
-.restaurant-card__like-icon {
+.restaurant__like-icon {
   position: relative;
 }
-.restaurant-card__like-icon:hover > .restaurant-card__like-icon--filled {
+.restaurant__like-icon:hover > .restaurant__like-icon--filled {
   animation: filling-icon 500ms 100ms forwards;
 }
-.restaurant-card__like-icon:hover > .restaurant-card__like-icon--empty {
+.restaurant__like-icon:hover > .restaurant__like-icon--empty {
   animation: disappearing-empty-icon 500ms 100ms forwards;
 }
 
-.restaurant-card__like-icon--filled {
+.restaurant__like-icon--filled {
   position: absolute;
   transform: scale(0);
   transform-origin: 25% bottom;
+}
+
+.restaurant-menu__title svg {
+  float: right;
+  height: 25px;
+  width: 25px;
+  margin-top: 15px;
+  margin-right: 25px;
+  filter: rgb(126, 126, 126);
+  margin: 0 10px;
+  height: 35px;
+  cursor: pointer;
+}
+.restaurant-menu__title .restaurant__like-icon--filled {
+  position: absolute;
+  right: 0;
+  transform-origin: bottom;
 }
 
 @keyframes filling-icon {
@@ -490,16 +508,6 @@ main img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#restaurant-menu h2 svg {
-  float: right;
-  height: 25px;
-  width: 25px;
-  margin-top: 15px;
-  margin-right: 25px;
-  filter: rgb(126, 126, 126);
-  margin: 0 10px;
-  height: 35px;
-}
 #restaurant-menu h3 {
   font-weight: 200;
   position: relative;
@@ -533,6 +541,10 @@ main img {
     width: 550px;
     margin: 10px auto;
   }
+}
+#restaurant-menu .restaurant-menu__title {
+  display: flex;
+  justify-content: space-between;
 }
 #restaurant-menu .restaurant-menu__btn-order {
   text-align: center;
