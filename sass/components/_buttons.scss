@@ -117,39 +117,52 @@
     &__btn-validate {
         background-color: $tertiary;
         border-radius: 0 10px 10px 0;
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 0;
+        transition: width 500ms;
 
         svg {
+            transition: opacity 300ms;
             width: 20px;
+            opacity: 0;
         }
 
         &-icon {
             fill: white;
         }
     }
-
 }
+
+// Animation : validation choix ----------------------------
+.restaurant-menu__btn-choice:hover {
+    .restaurant-menu__btn-validate {
+        width: 80px;
+    }
+
+    svg {
+        opacity: 1;
+        animation: icon-roll 400ms 100ms;
+    }
+}
+
+@keyframes icon-roll {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(370deg); }
+}
+
 
 // Animation : slide-effect boutons Choix ----------------------------
 .restaurant-menu__btn-choice {
-    &:nth-child(2) {
-        animation: slide-effect $anim-restaurant-choice-duration 150ms both;
-    }
+    &:nth-child(2) { animation: slide-effect $anim-restaurant-choice-duration 150ms both; }
 
-    &:nth-child(3) {
-        animation: slide-effect $anim-restaurant-choice-duration 350ms both;
-    }
+    &:nth-child(3) { animation: slide-effect $anim-restaurant-choice-duration 350ms both; }
 
-    &:nth-child(4) {
-        animation: slide-effect $anim-restaurant-choice-duration 550ms both;
-    }
+    &:nth-child(4) { animation: slide-effect $anim-restaurant-choice-duration 550ms both; }
 
-    &:nth-child(5) {
-        animation: slide-effect $anim-restaurant-choice-duration 750ms both;
-    }
+    &:nth-child(5) { animation: slide-effect $anim-restaurant-choice-duration 750ms both; }
 }
 
 @keyframes slide-effect {
@@ -163,40 +176,8 @@
     }
 }
 
-// Animation : icon-roll pour validation choix ----------------------------
-.restaurant-menu__btn-choice {
-    .restaurant-menu__btn-validate  {
-    animation: disappearing-validate 500ms forwards;
-    }
-}
 
-.restaurant-menu__btn-choice:hover {
-    .restaurant-menu__btn-validate  {
-    display: flex;
-    animation: appearing-validate 500ms ease forwards;
-    }
-
-    svg {
-        animation: icon-roll 400ms 100ms;
-    }
-}
-
-@keyframes appearing-validate {
-    0% { width: 0px; }
-    100% { width: 80px; }
-}
-
-@keyframes disappearing-validate {
-    0% { width: 80px; }
-    100% { width: 0px; }
-}
-
-@keyframes icon-roll {
-    0% { transform: rotate(0); }
-    100% { transform: rotate(370deg); }
-}
-
-// Like-icons ----------------------------
+// Animation : Like-icons ----------------------------
 .restaurant-card__like-icon {
     position: relative;
 }
