@@ -16,8 +16,10 @@
 
 @mixin like-icon() {
     float: right;
-    height: 50px;
+    height: 25px;
     width: 25px;
+    margin-top: 15px;
+    margin-right: 25px;
     filter: map-get($icons-color-filter, home);
 }
 
