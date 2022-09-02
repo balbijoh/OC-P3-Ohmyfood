@@ -12,7 +12,7 @@
     @include buttons-shadow($darkShadow);
 
     &:hover {
-        animation: btn-generic-hover-effect 500ms forwards;
+        animation: btn-generic-hover-effect 400ms forwards;
     }
 }
 

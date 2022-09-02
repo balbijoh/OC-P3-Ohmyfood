@@ -48,7 +48,7 @@ p {
   box-shadow: 0 2px 8px #a7a7a7;
 }
 .btn--generic:hover {
-  animation: btn-generic-hover-effect 500ms forwards;
+  animation: btn-generic-hover-effect 400ms forwards;
 }
 
 @keyframes btn-generic-hover-effect {
