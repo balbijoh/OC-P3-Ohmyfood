@@ -20,7 +20,6 @@
     width: 25px;
     margin-top: 15px;
     margin-right: 25px;
-    filter: map-get($icons-color-filter, home);
 }
 
 @mixin text-overflow() {    

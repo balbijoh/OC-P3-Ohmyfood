@@ -16,7 +16,7 @@ footer {
     &__link {
         line-height: 25px;
         svg {
-            filter: map-get($icons-color-filter, footer);
+            fill: white;
             width: 15px;
             height: 15px;
             margin-top: 2px;

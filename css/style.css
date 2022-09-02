@@ -227,7 +227,6 @@ p {
   width: 25px;
   margin-top: 15px;
   margin-right: 25px;
-  filter: rgb(126, 126, 126);
   padding: 0;
 }
 
@@ -253,7 +252,6 @@ p {
   width: 25px;
   margin-top: 15px;
   margin-right: 25px;
-  filter: rgb(126, 126, 126);
   margin: 0 10px;
   height: 35px;
   cursor: pointer;
@@ -423,7 +421,7 @@ footer {
   line-height: 25px;
 }
 .footer__link svg {
-  filter: white;
+  fill: white;
   width: 15px;
   height: 15px;
   margin-top: 2px;

@@ -76,7 +76,8 @@
     }
 
     &__icon {
-        fill: map-get($icons-color-filter, home);
+        fill: rgba(126, 126, 126, 1);
+
     }
     
     &__text {
