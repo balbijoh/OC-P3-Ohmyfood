@@ -55,17 +55,11 @@ p {
   0% {
     opacity: 1;
   }
-  30% {
-    opacity: 0.7;
-    width: 210px;
-  }
   100% {
     opacity: 1;
-    width: 250px;
     color: rgba(0, 0, 0, 0.9);
-    font-weight: bold;
-    background: #99E2D0;
-    box-shadow: 0 2px 8px #99E2D0;
+    box-shadow: 0 2px 15px #8e8e8e;
+    background: #ff83dd;
   }
 }
 .notice-buttons a {
@@ -612,9 +606,6 @@ main img {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   font-size: 28px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 #restaurant-menu h3 {
   font-weight: 200;

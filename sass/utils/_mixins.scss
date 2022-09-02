@@ -10,8 +10,8 @@
     }
 }
 
-@mixin buttons-shadow($shadowColor : $lightShadow) {
-    box-shadow: 0 2px 8px $shadowColor;
+@mixin buttons-shadow($shadowColor : $lightShadow, $shadowScope : 8px) {
+    box-shadow: 0 2px $shadowScope $shadowColor;
 }
 
 @mixin like-icon() {
