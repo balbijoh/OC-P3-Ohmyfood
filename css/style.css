@@ -47,7 +47,27 @@ p {
   cursor: pointer;
   box-shadow: 0 2px 8px #a7a7a7;
 }
+.btn--generic:hover {
+  animation: btn-generic-hover-effect 500ms forwards;
+}
 
+@keyframes btn-generic-hover-effect {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.7;
+    width: 210px;
+  }
+  100% {
+    opacity: 1;
+    width: 250px;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+    background: #99E2D0;
+    box-shadow: 0 2px 8px #99E2D0;
+  }
+}
 .notice-buttons a {
   width: 100%;
 }
