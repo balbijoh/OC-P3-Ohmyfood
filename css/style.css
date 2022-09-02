@@ -259,7 +259,7 @@ p {
 .restaurant-menu__title .restaurant__like-icon--filled {
   position: absolute;
   right: 0;
-  transform-origin: bottom;
+  transform-origin: 50% 80%;
 }
 
 @keyframes filling-icon {
