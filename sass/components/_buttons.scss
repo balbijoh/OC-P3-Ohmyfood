@@ -10,6 +10,28 @@
     width: 220px;
     cursor: pointer;
     @include buttons-shadow($darkShadow);
+
+    &:hover {
+        animation: btn-generic-hover-effect 400ms forwards;
+    }
+}
+
+@keyframes btn-generic-hover-effect {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0.7;
+        width: 210px;
+    }
+    100% {
+        opacity: 1;
+        width: 250px;
+        color: $black90;
+        font-weight: bold;
+        background: $tertiary;
+        @include buttons-shadow($tertiary);
+    }
 }
 
 
@@ -117,39 +139,49 @@
     &__btn-validate {
         background-color: $tertiary;
         border-radius: 0 10px 10px 0;
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 0;
+        transition: width 500ms;
 
         svg {
+            transition: opacity 300ms;
             width: 20px;
+            opacity: 0;
         }
 
         &-icon {
             fill: white;
         }
     }
-
 }
+
+// Animation : validation choix ----------------------------
+.restaurant-menu__btn-choice:hover {
+    .restaurant-menu__btn-validate {
+        width: 80px;
+    }
+
+    svg {
+        opacity: 1;
+        animation: icon-roll 400ms 100ms;
+    }
+}
+
+@keyframes icon-roll {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(370deg); }
+}
+
 
 // Animation : slide-effect boutons Choix ----------------------------
 .restaurant-menu__btn-choice {
-    &:nth-child(2) {
-        animation: slide-effect $anim-restaurant-choice-duration 150ms both;
-    }
-
-    &:nth-child(3) {
-        animation: slide-effect $anim-restaurant-choice-duration 350ms both;
-    }
-
-    &:nth-child(4) {
-        animation: slide-effect $anim-restaurant-choice-duration 550ms both;
-    }
-
-    &:nth-child(5) {
-        animation: slide-effect $anim-restaurant-choice-duration 750ms both;
-    }
+    &:nth-child(2) { animation: slide-effect $anim-restaurant-choice-duration 150ms both; }
+    &:nth-child(3) { animation: slide-effect $anim-restaurant-choice-duration 350ms both; }
+    &:nth-child(4) { animation: slide-effect $anim-restaurant-choice-duration 550ms both; }
+    &:nth-child(5) { animation: slide-effect $anim-restaurant-choice-duration 750ms both; }
 }
 
 @keyframes slide-effect {
@@ -163,35 +195,60 @@
     }
 }
 
-// Animation : icon-roll pour validation choix ----------------------------
-.restaurant-menu__btn-choice {
-    .restaurant-menu__btn-validate  {
-    animation: disappearing-validate 500ms forwards;
-    }
+
+// Animation : Like-icons ----------------------------
+#fill-like-icon-svg path {
+    fill: url(#like-icon-gradient);
 }
 
-.restaurant-menu__btn-choice:hover {
-    .restaurant-menu__btn-validate  {
-    display: flex;
-    animation: appearing-validate 500ms ease forwards;
-    }
-
+.restaurant-card {
     svg {
-        animation: icon-roll 400ms 100ms;
+        @include like-icon;
+        padding: 0;
     }
 }
 
-@keyframes appearing-validate {
-    0% { width: 0px; }
-    100% { width: 80px; }
+.restaurant__like-icon {
+    position: relative;
+
+    &:hover > .restaurant__like-icon--filled {
+        animation: filling-icon 500ms 100ms forwards;
+    }
+
+    &:hover > .restaurant__like-icon--empty {
+        animation: disappearing-empty-icon 500ms 100ms forwards;
+    }
 }
 
-@keyframes disappearing-validate {
-    0% { width: 80px; }
-    100% { width: 0px; }
+.restaurant__like-icon--filled {
+    position: absolute;
+    transform: scale(0);
+    transform-origin: 25% bottom;
 }
 
-@keyframes icon-roll {
-    0% { transform: rotate(0); }
-    100% { transform: rotate(370deg); }
+.restaurant-menu__title {
+    svg {
+        @include like-icon;
+        margin: 0 10px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    .restaurant__like-icon--filled {
+        position: absolute;
+        right: 0;
+        transform-origin: bottom;
+    }
+}
+
+
+@keyframes filling-icon {
+	0% { transform: scale(0); }
+	100% { transform: scale(1); }
+}
+
+@keyframes disappearing-empty-icon {
+	0% { opacity: 1; }    
+    80% { opacity: 1; }
+	100% { opacity: 0; }
 }
