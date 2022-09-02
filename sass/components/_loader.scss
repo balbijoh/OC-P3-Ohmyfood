@@ -1,19 +1,18 @@
 .loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: 1000;
-    background-color: $black20;
-    animation: loading-screen 3000ms 50ms forwards;
+    background-color: $black65;
+    animation: loading-screen 2000ms 50ms forwards;
 }
 
 @keyframes loading-screen {
-    0% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
+    0% { opacity: 1; }
+    99% { opacity: 1; }
     100% {
         opacity: 0;
         z-index: -1;
@@ -22,74 +21,73 @@
 
 
 .loading-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    margin: 20% auto;
-    width: 250px;
-    height: 140px;
-    background: lighten($primary, 20%);
+    margin: 0 auto;
+    width: 400px;
+    height: 240px;
+    background: $black90;
     border-radius: 20px;
-    box-shadow: 0 0 50px white;
+    box-shadow: 0 0 20px white;
+
+    &_logo {
+        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(214deg) brightness(104%) contrast(98%);
+        width: 200px;
+        margin: 0 auto;
+    }
 
     p {
-        text-align: center;
-        margin-top: 10px;
         color: white;
+        text-align: center;
+        margin-top: 20px;
     }
 
     .loading-spinner {
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 80px;
-        margin-top: 10px;
+        margin: 60px auto 0;
+        width: 85px;
     
         &__dot {
-        width: 5px;
-        height: 5px;
+        width: 10px;
+        height: 10px;
         border-radius: 5px;
-        background-color: white;
         margin: 0 10px;
+        box-shadow: 0 0 4px white;            
 
-        &--1 {
-            position: relative;
-            left: 10px;
-            animation: spinner-anim 2000ms 0ms infinite;
-        }
+            &--1 {
+                background-color: $primary;
+                animation: spinner-anim 1000ms infinite;
+            }
 
-        &--2 {
-            position: relative;
-            bottom: 20px;
-            left: 10px;
-            animation: spinner-anim 2000ms 300ms infinite;
-        }
+            &--2 {
+                background-color: $secondary;
+                animation: spinner-anim 1000ms 250ms infinite;
+            }
 
-        &--3 {
-            position: relative;
-            left: 10px;
-            animation: spinner-anim 2000ms 600ms infinite;
-        }
-
-        &--4 {
-            position: relative;
-            top: 20px;
-            right: 40px;
-            animation: spinner-anim 2000ms 900ms infinite;
-        }
+            &--3 {
+                background-color: $tertiary;
+                animation: spinner-anim 1000ms 500ms infinite;
+            }
         }
     }
 }
 
 @keyframes spinner-anim {
-    0% { 
-        transform: scale(1); 
+    0% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
     }
-    50% {
-        transform: scale(2.5); 
+    30% {
+        transform: translateY(-30px);
+        animation-timing-function: ease-in;
+    }
+    80% {
+        transform: translateY(0);
     }
     100% {
-        transform: scale(1); 
+        transform: translateY(0);
     }
 }
