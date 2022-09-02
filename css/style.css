@@ -349,7 +349,6 @@ p {
   display: flex;
   justify-content: center;
   margin: 60px auto 0;
-  width: 85px;
 }
 .loading-message .loading-spinner__dot {
   width: 10px;
