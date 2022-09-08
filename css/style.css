@@ -308,7 +308,7 @@ p {
   height: 100%;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.65);
-  animation: loading-screen 3000ms 50ms forwards;
+  animation: loading-screen 3000s 50ms forwards;
 }
 
 @keyframes loading-screen {
@@ -331,19 +331,15 @@ p {
   margin: 0 auto;
   width: 400px;
   height: 240px;
-  background: rgba(0, 0, 0, 0.9);
+  background: #f8f8f8;
   border-radius: 20px;
-  box-shadow: 0 0 20px white;
-}
-.loading-message_logo {
-  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(214deg) brightness(104%) contrast(98%);
-  width: 200px;
-  margin: 0 auto;
+  box-shadow: 0 0 5px white;
 }
 .loading-message p {
-  color: white;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 24px;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .loading-message .loading-spinner {
   display: flex;
@@ -355,7 +351,6 @@ p {
   height: 10px;
   border-radius: 5px;
   margin: 0 10px;
-  box-shadow: 0 0 4px white;
 }
 .loading-message .loading-spinner__dot--1 {
   background-color: #9356DC;

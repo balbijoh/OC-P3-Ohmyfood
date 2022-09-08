@@ -7,7 +7,7 @@
     height: 100%;
     z-index: 1000;
     background-color: $black65;
-    animation: loading-screen 3000ms 50ms forwards;
+    animation: loading-screen 3000s 50ms forwards;
 }
 
 @keyframes loading-screen {
@@ -28,20 +28,15 @@
     margin: 0 auto;
     width: 400px;
     height: 240px;
-    background: $black90;
+    background: $lightBackgroundOpac;
     border-radius: 20px;
-    box-shadow: 0 0 20px white;
-
-    &_logo {
-        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(214deg) brightness(104%) contrast(98%);
-        width: 200px;
-        margin: 0 auto;
-    }
+    box-shadow: 0 0 5px white;
 
     p {
-        color: white;
+        font-family: "Shrikhand", sans-serif;
+        font-size: 24px;
         text-align: center;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .loading-spinner {
@@ -53,8 +48,7 @@
         width: 10px;
         height: 10px;
         border-radius: 5px;
-        margin: 0 10px;
-        box-shadow: 0 0 4px white;            
+        margin: 0 10px;          
 
             &--1 {
                 background-color: $primary;
