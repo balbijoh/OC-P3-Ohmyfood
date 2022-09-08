@@ -308,7 +308,7 @@ p {
   height: 100%;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.65);
-  animation: loading-screen 3000s 50ms forwards;
+  animation: loading-screen 3000ms 50ms forwards;
 }
 
 @keyframes loading-screen {

@@ -7,7 +7,7 @@
     height: 100%;
     z-index: 1000;
     background-color: $black65;
-    animation: loading-screen 3000s 50ms forwards;
+    animation: loading-screen 3000ms 50ms forwards;
 }
 
 @keyframes loading-screen {
