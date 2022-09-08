@@ -68,6 +68,7 @@ p {
 @media screen and (min-width: 992px) {
   .notice-buttons a {
     max-width: 400px;
+    margin: 5px;
   }
 }
 
@@ -84,12 +85,17 @@ p {
 .notice-btn__number {
   background-color: #9356DC;
   border-radius: 50px;
-  color: white;
   width: 25px;
+  height: 25px;
   text-align: center;
-  font-size: 14px;
-  padding: 5px 0 3px;
   margin-left: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice-btn__number-text {
+  color: white;
+  font-size: 14px;
 }
 .notice-btn i {
   margin: 5px 20px 0;
@@ -433,6 +439,12 @@ footer {
 .footer__link a:hover .footer__link-icon {
   fill: #FF79DA;
 }
+@media screen and (min-width: 992px) {
+  .footer {
+    padding: 40px;
+    height: 240px;
+  }
+}
 
 .search {
   background-color: rgba(1, 1, 10, 0.03);
@@ -477,17 +489,10 @@ footer {
 #notice {
   padding: 50px 20px;
 }
-@media screen and (min-width: 599px) {
-  #notice {
-    width: 400px;
-    text-align: center;
-    margin: 0 auto;
-  }
-}
 @media screen and (min-width: 992px) {
   #notice {
-    width: 100%;
-    text-align: center;
+    height: 380px;
+    padding: 40px;
   }
 }
 
@@ -497,12 +502,20 @@ footer {
   align-items: center;
   padding: 20px 0 10px 10px;
 }
+@media screen and (min-width: 599px) {
+  .notice-buttons {
+    width: 500px;
+    margin: 50px auto;
+  }
+}
 @media screen and (min-width: 992px) {
   .notice-buttons {
+    width: 100%;
     flex-direction: row;
     justify-content: space-around;
     max-width: 1500px;
     margin: 0 auto;
+    padding-top: 80px;
   }
 }
 
@@ -513,14 +526,6 @@ footer {
 @media screen and (min-width: 992px) {
   #restaurants {
     padding: 40px;
-    border-radius: 20px;
-    margin: 0 20px 20px;
-    box-shadow: 0 2px 8px #dadada;
-  }
-}
-@media screen and (min-width: 992px) {
-  #restaurants h2 {
-    text-align: center;
   }
 }
 
@@ -529,22 +534,31 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   padding-top: 20px;
+  max-width: 1000px;
 }
 @media screen and (min-width: 599px) {
   .restaurants-cards {
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 50px auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants-cards {
+    width: 80%;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 599px) {
   .restaurants-cards a {
     width: 48%;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 992px) {
   .restaurants-cards a {
-    width: 24%;
-    max-width: 450px;
+    width: 46%;
+    margin: 10px;
   }
 }
 

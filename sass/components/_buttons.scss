@@ -35,6 +35,7 @@
         width: 100%;
         @include large-devices {
             max-width: 400px;
+            margin: 5px;
         }
     }
 }
@@ -49,15 +50,23 @@
     text-align: left;
     @include buttons-shadow;
 
+    
+
     &__number {
         background-color: $primary;
         border-radius: 50px;
-        color: white;
         width: 25px;
+        height: 25px;
         text-align: center;
-        font-size: 14px;
-        padding: 5px 0 3px;
         margin-left: -12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__number-text {
+        color: white;
+        font-size: 14px;
     }
 
     i {
