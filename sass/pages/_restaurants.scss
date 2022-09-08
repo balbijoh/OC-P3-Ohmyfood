@@ -16,13 +16,22 @@ main {
     border-radius: 40px 40px 0 0;
     padding: 30px 20px 80px;
 
+    @include medium-devices {
+        border-radius: 0px;
+    }
+
+    @include large-devices {
+        padding: 40px;
+    }
+
     h2 {
         font-family: $secondaryTypography;
         font-weight: 400;
         font-size: 28px;
-        // white-space: nowrap;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
+
+        @include large-devices {
+            margin-bottom: 20px;
+        }
     }
 
     h3 {
@@ -43,6 +52,10 @@ main {
             bottom:0;
             border-bottom:3px solid $tertiary;
         }
+
+        @include large-devices {
+            margin-bottom: 30px;
+        }
     }
 
     p {
@@ -62,17 +75,29 @@ main {
             width: 550px;
             margin: 10px auto;
         }
+
+        @include large-devices {
+            margin: 0;
+        }
     }
 
     .restaurant-menu {
         &__title {
             display: flex;
             justify-content: space-between;
+
+            @include medium-devices {
+                margin: 20px 0;
+            }
         }
 
         &__btn-order {
             text-align: center;
             margin-top: 50px;
+
+            @include large-devices {
+                margin: 70px 0;
+            }
         }
     
         &__composition-table {
@@ -80,13 +105,13 @@ main {
             flex-direction: column;
             @include large-devices {
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: space-between;
             }
 
             section {
-            @include large-devices {
-                width: 30%;
-            }
+                @include large-devices {
+                    width: 30%;
+                }
             }
         }
     }    
