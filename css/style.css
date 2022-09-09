@@ -12,7 +12,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 ul {
@@ -41,11 +41,10 @@ p {
   border: none;
   border-radius: 30px;
   color: white;
-  font-size: 16px;
-  font-weight: 400;
   width: 220px;
   cursor: pointer;
-  box-shadow: 0 2px 8px #a7a7a7;
+  font-size: 16px;
+  box-shadow: 0 2px #a7a7a7 #dadada;
 }
 .btn--generic:hover {
   animation: btn-generic-hover-effect 400ms forwards;
@@ -55,10 +54,13 @@ p {
   0% {
     opacity: 1;
   }
+  20% {
+    opacity: 0.5;
+  }
   100% {
     opacity: 1;
     color: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 2px 15px #8e8e8e;
+    box-shadow: 0 2px #8e8e8e 15px;
     background: #ff83dd;
   }
 }
@@ -74,8 +76,8 @@ p {
 
 .notice-btn {
   display: flex;
-  height: 70px;
   align-items: center;
+  height: 70px;
   margin: 10px;
   background-color: rgba(1, 1, 10, 0.03);
   border-radius: 20px;
@@ -98,14 +100,12 @@ p {
   color: white;
   font-size: 14px;
 }
-.notice-btn i {
-  margin: 5px 20px 0;
-}
 .notice-btn svg {
   width: 20px;
   height: 20px;
+  margin: 5px 20px 0;
 }
-.notice-btn__icon {
+.notice-btn svg path {
   fill: rgb(126, 126, 126);
 }
 .notice-btn__text {
@@ -114,7 +114,7 @@ p {
 .notice-btn:hover {
   background-color: #f2eafb;
 }
-.notice-btn:hover .notice-btn__icon {
+.notice-btn:hover path {
   fill: #9356DC;
 }
 
@@ -175,7 +175,7 @@ p {
   width: 20px;
   opacity: 0;
 }
-.restaurant-menu__btn-validate-icon {
+.restaurant-menu__btn-validate svg path {
   fill: white;
 }
 
@@ -334,7 +334,7 @@ p {
   height: 240px;
   background: #f8f8f8;
   border-radius: 20px;
-  box-shadow: 0 0 5px white;
+  box-shadow: 0 2px 3px #dadada;
 }
 .loading-message p {
   font-family: "Shrikhand", sans-serif;
@@ -422,9 +422,6 @@ footer {
   margin-top: 2px;
   margin-right: 10px;
 }
-.footer__link .footer__link-icon {
-  fill: white;
-}
 .footer__link a {
   color: white;
   font-size: 16px;
@@ -432,7 +429,7 @@ footer {
 .footer__link a:hover {
   color: #FF79DA;
 }
-.footer__link a:hover .footer__link-icon {
+.footer__link a:hover svg {
   fill: #FF79DA;
 }
 @media screen and (min-width: 992px) {
@@ -450,8 +447,8 @@ footer {
   background-color: rgba(1, 1, 10, 0.06);
   padding: 14px 0;
 }
-.search-location label {
-  display: none;
+.search-location .fa-location-dot path {
+  fill: rgba(0, 0, 0, 0.65);
 }
 .search-location input {
   background-color: transparent;
@@ -560,7 +557,7 @@ footer {
 
 .restaurant-card {
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 15px;
   height: 250px;
   margin-bottom: 15px;

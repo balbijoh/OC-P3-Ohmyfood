@@ -10,7 +10,7 @@
     }
 }
 
-@mixin buttons-shadow($shadowColor : $lightShadow, $shadowScope : 8px) {
+@mixin buttons-shadow($shadowScope: 8px, $shadowColor: $lightShadow) {
     box-shadow: 0 2px $shadowScope $shadowColor;
 }
 

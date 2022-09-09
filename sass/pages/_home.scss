@@ -4,15 +4,17 @@
     &-location {
         background-color: $darkBackground;
         padding: 14px 0;
-        label {
-            display: none;
-        }      
+
+        .fa-location-dot path {
+            fill: $black65;
+        }
+
         input {
             background-color: transparent;
             border: none;
             font-weight: bold;
             text-align: center;
-            font-size: 16px;
+            font-size: map-get($font-size, size-p);
             width: 150px;
             color: $black65;
         }
@@ -23,13 +25,16 @@
         flex-direction: column;
         justify-content: center;
         padding: 20px;
+
         h2 {
             padding: 15px 0;
         }
+
         p {
             padding-bottom: 30px;
             color: $black65;
         }
+
         @include large-devices {
             height: 250px;
         }
@@ -37,10 +42,11 @@
 }
 
 #notice {
-    padding: $paddingSections;
+    padding: map-get($padding-sections, mobile);
+
     @include large-devices {
         height: 380px;
-        padding: 40px;
+        padding: map-get($padding-sections, large-devices);
     }
 }
 
@@ -67,9 +73,10 @@
 
 #restaurants {
     background-color: $lightBackground;
-    padding: $paddingSections;
+    padding: map-get($padding-sections, mobile);
+
     @include large-devices {        
-        padding: 40px;
+        padding: map-get($padding-sections, large-devices);
     }
 }
 
@@ -105,7 +112,7 @@
 
 .restaurant-card {
     width: 100%;
-    background-color: white;
+    background-color: $neutralBackground;
     border-radius: 15px;
     height: 250px;
     margin-bottom: 15px;

@@ -5,10 +5,9 @@
     border : none;
     border-radius: 30px;
     color: white;
-    font-size: 16px;
-    font-weight: 400;
     width: 220px;
     cursor: pointer;
+    font-size: map-get($font-size, size-p);
     @include buttons-shadow($darkShadow);
 
     &:hover {
@@ -19,6 +18,9 @@
 @keyframes btn-generic-hover-effect {
     0% {
         opacity: 1;
+    }
+    20% {
+        opacity: 0.5;
     }
     100% {
         opacity: 1;
@@ -42,15 +44,13 @@
 
 .notice-btn {
     display: flex;
-    height: 70px;
     align-items: center;
+    height: 70px;
     margin: 10px;
     background-color: $lightBackground;
     border-radius: 20px;
     text-align: left;
     @include buttons-shadow;
-
-    
 
     &__number {
         background-color: $primary;
@@ -63,25 +63,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
 
-    &__number-text {
-        color: white;
-        font-size: 14px;
-    }
-
-    i {
-        margin: 5px 20px 0;        
+        &-text {
+            color: white;
+            font-size: 14px;
+        }
     }
 
     svg {
         width: 20px;
         height: 20px;
-    }
+        margin: 5px 20px 0; 
 
-    &__icon {
-        fill: rgba(126, 126, 126, 1);
-
+        path {
+            fill: $neutralIcons;
+        }
     }
     
     &__text {
@@ -91,7 +87,7 @@
     &:hover {
         @include background-hover-color;
 
-        .notice-btn__icon {
+        path {
             fill: $primary;
         }
     }    
@@ -155,15 +151,15 @@
             transition: opacity 300ms;
             width: 20px;
             opacity: 0;
-        }
 
-        &-icon {
-            fill: white;
+            path {
+                fill: white;
+            }
         }
     }
 }
 
-// Animation : validation choix ----------------------------
+// Animation : validation choix -----------------------------------------
 .restaurant-menu__btn-choice:hover {
     .restaurant-menu__btn-validate {
         width: 80px;
@@ -181,12 +177,12 @@
 }
 
 
-// Animation : slide-effect boutons Choix ----------------------------
+// Animation : slide-effect boutons Choix ---------------------------------
 .restaurant-menu__btn-choice {
-    &:nth-child(2) { animation: slide-effect $anim-restaurant-choice-duration 150ms both; }
-    &:nth-child(3) { animation: slide-effect $anim-restaurant-choice-duration 350ms both; }
-    &:nth-child(4) { animation: slide-effect $anim-restaurant-choice-duration 550ms both; }
-    &:nth-child(5) { animation: slide-effect $anim-restaurant-choice-duration 750ms both; }
+    &:nth-child(2) { animation: slide-effect 1000ms 150ms both; }
+    &:nth-child(3) { animation: slide-effect 1000ms 350ms both; }
+    &:nth-child(4) { animation: slide-effect 1000ms 550ms both; }
+    &:nth-child(5) { animation: slide-effect 1000ms 750ms both; }
 }
 
 @keyframes slide-effect {
@@ -201,7 +197,7 @@
 }
 
 
-// Animation : Like-icons ----------------------------
+// Animation : Like-icons -------------------------------------------
 .fill-like-icon-svg path {
     fill: url(#like-icon-gradient);
 }

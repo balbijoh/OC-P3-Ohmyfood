@@ -30,11 +30,11 @@
     height: 240px;
     background: $lightBackgroundOpac;
     border-radius: 20px;
-    box-shadow: 0 0 5px white;
+    @include buttons-shadow(3px);
 
     p {
         font-family: $secondaryTypography;
-        font-size: 24px;
+        font-size: map-get($font-size, title-h2);
         text-align: center;
         margin-bottom: 20px;
     }

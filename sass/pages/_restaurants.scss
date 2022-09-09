@@ -23,7 +23,7 @@ main {
     }
 
     @include large-devices {
-        padding: 40px;
+        padding: map-get($padding-sections, large-devices);
     }
 
     h2 {
