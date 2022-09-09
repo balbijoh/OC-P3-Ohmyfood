@@ -30,7 +30,7 @@
     height: 240px;
     background: $lightBackgroundOpac;
     border-radius: 20px;
-    @include buttons-shadow(3px);
+    @include buttons-shadow($lightShadow, 3px);
 
     p {
         font-family: $secondaryTypography;

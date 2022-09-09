@@ -44,7 +44,7 @@ p {
   width: 220px;
   cursor: pointer;
   font-size: 16px;
-  box-shadow: 0 2px #a7a7a7 #dadada;
+  box-shadow: 0 2px 8px #a7a7a7;
 }
 .btn--generic:hover {
   animation: btn-generic-hover-effect 400ms forwards;
@@ -60,7 +60,7 @@ p {
   100% {
     opacity: 1;
     color: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 2px #8e8e8e 15px;
+    box-shadow: 0 2px 15px #8e8e8e;
     background: #ff83dd;
   }
 }
